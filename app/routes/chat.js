@@ -9,7 +9,7 @@ export default Ember.Route.extend({
     },
 
     actions: {
-        createMessage = (message) => {
+        createMessage : (message) => {
             let newRecord = this.store.createRecord('message', {
                 text: message,
                 user: this.get('userFromParams')
