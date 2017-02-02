@@ -1,5 +1,12 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<div class="container">
+  <div class="page-header">
+    <h1>WDC Mini Chat
+      <small>Let's talk about Ember</small>
+    </h1>
+    <div class="pull-right nav-links">
+      {{#link-to "index"}}Home{{/link-to}} | {{#link-to "about"}}About{{/link-to}}
+    </div>
+  </div>
 
-{{outlet}}
+  {{outlet}}
+</div>
