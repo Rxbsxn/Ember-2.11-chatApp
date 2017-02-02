@@ -1,11 +1,18 @@
 /* jshint node: true */
 
-module.exports = function(environment) {
+module.exports = (environment) => {
   var ENV = {
     modulePrefix: 'ember-chat-app',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    firebase: {
+      apiKey: "AIzaSyDUDPiZUEd8tyrbQIfs7f40j0nqP9pjKvg",
+      authDomain: "awesome-chat-53d96.firebaseapp.com",
+      databaseURL: "https://awesome-chat-53d96.firebaseio.com",
+      storageBucket: "awesome-chat-53d96.appspot.com",
+      messagingSenderId: "94970526091"
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
